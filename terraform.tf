@@ -5,6 +5,7 @@ provider "aws" {
 resource "aws_s3_bucket" "default" {
   bucket = "${var.bucket}"
   acl    = "public-read"
+  region = "${var.region}"
 
   logging {
     target_bucket = "${aws_s3_bucket.logs.bucket}"
