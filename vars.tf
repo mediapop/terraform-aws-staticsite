@@ -18,7 +18,7 @@ variable "region" {
 
 variable "force_destroy" {
   description = "If true will allow non-empty buckets to be destroyed."
-  default = false
+  default     = false
 }
 
 variable "index_document" {
